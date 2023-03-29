@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html {
+    background-color: gray;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: gainsboro;
+}
+main {
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+}
+.add-btn {
+    background-color: transparent;
+    border: hidden;
+    font-size: 24px;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+#library {
+    background-color: aqua;
+}
+.book-card {
+    background-color: blueviolet;
+    width: max-content;
+}
