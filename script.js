@@ -29,10 +29,10 @@ function render() {
             <h5 class = 'author'>by: ${book.author}</h5>
         </div>
         <div class ='card-body'>
-            <p>${book.pages} Pages</p>
+            <p>${book.pages} pages</p>
             <p>${book.read ? 'Read' : 'Not Read Yet'}</p>
-            <button class='remove-btn' onclick = 'removeBook(${i})'>Remove</button>
             <button type='checkbox'class='toggle-btn' onclick = 'toggleRead(${i})'>Read</button>
+            <button class='remove-btn' onclick = 'removeBook(${i})'>Remove</button>
         </div>
         `
         library.appendChild(bookElement)
@@ -66,4 +66,6 @@ addBtn.addEventListener('click', function() {
 document.querySelector('#form').addEventListener('submit', function (event) {
     event.preventDefault();
     addBookToLibrary();
+    let form = document.querySelector('#form');
+    form.style = 'display: none;'
 })

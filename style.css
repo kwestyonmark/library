@@ -9,6 +9,7 @@ html {
     background-color: gray;
     min-height: 100vh;
     font-family: sans-serif;
+    text-align: center;
 }
 header {
     display: flex;
@@ -18,7 +19,6 @@ header {
     background-color: gainsboro;
 }
 main {
-    /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
 }
@@ -30,9 +30,35 @@ main {
     cursor: pointer;
 }
 #library {
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+
 }
 .book-card {
-    background-color: blueviolet;
-    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.2;
+    font-size: 20px;
+    
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+/* .form {
+    display: flex;
+    justify-content: center;
+} */
+form {
+    position: fixed;
+    width: 200px;
+    background-color: ghostwhite;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: large;
 }
